@@ -17,7 +17,7 @@ function updateDisplay() {
     spanPageViews.innerText = pageViews + "K";
     spanMonthlyCost.innerText = "$" + monthlyCost.toFixed(2) + " ";
     const percent = pageViews / 2;
-    slider.style = "background: linear-gradient(to right, var(--soft-cyan), var(--soft-cyan) " + percent + "%, var(--lt-grayish-blue), var(--lt-grayish-blue) " + percent + "%);";
+    slider.style = "background: linear-gradient(to right, var(--soft-cyan), var(--soft-cyan) " + percent + "%, var(--lt-grayish-blue)" + percent +"%, var(--lt-grayish-blue));";
 }
 
 slider.oninput = function() {
