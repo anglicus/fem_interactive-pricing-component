@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+
+<body>
+  <header>
+    <h1>Simple, traffic-based pricing</h1>
+    <p>Sign-up for our 30-day trial. No credit card required.</p>
+  </header>
+
+  <main>
+    <div class="pricing">
+      <p class="pageviews"><span id="val-pageviews">K</span> Pageviews</p>
+      <div class="slider-container">
+        <input type="range" min="0" max="200" value="100" class="slider" id="slider" title="pageviews slider">
+      </div>
+      <div class="monthly-cost"><span id="val-monthly-cost">$</span><span id="per-month">/ month</span></div>
+    </div>
+    <div class="billing">
+      <p>Monthly Billing</p>
+      <label class="toggle-switch">
+        <input type="checkbox" id="toggle" title="monthly-yearly billing toggle">
+        <span class="toggle-round"></span>
+      </label>
+      <p>
+        Yearly Billing
+        <span class="discount">25%</span>
+      </p>
+    </div>
+    <div class="features">
+      <ul>
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
+      <button class="cta-trial">Start my trial</button>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/anglicus">James English</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
